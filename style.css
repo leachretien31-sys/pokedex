@@ -1,3 +1,9 @@
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
 .ma-classe {
    color: white;
    font-family: Georgia, 'Times New Roman', Times, serif;
@@ -17,12 +23,15 @@
 .sous-titre {
     font-weight: bold;
     color: black;
+    text-align: center;
+    background-color: #d90b0b;
+    border-radius: 10px;
+    width: fit-content;
+    margin: 40px auto;
+    paddind: 15px 50px;
 
 }
 
-.sous-titre-bis {
-    font-style: italic;
-    font-weight: thin;
-    color: black;
-    
-}
+
+
+
