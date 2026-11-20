@@ -3,9 +3,12 @@ const Pokemons = document.querySelectorAll(".Pokemon")
 const SearchBar = document.getElementById("allpokemon");
 
 SearchBar.addEventListener("input", function () {
-    console.log(SearchBar.value);
     Pokemons.forEach(function (unPokemon) {
-    console.log(unPokemon.textContent);
+        if (unPokemon.textContent.toLowerCase().includes(SearchBar.value.toLowerCase())) {
+            unPokemon.style.display = "";
+        } else {
+            unPokemon.style.display = "none";
+        }
+    });
 });
-});
- 
+
